@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/storage.js" defer></script>
+    <script type="module" src="js/usuario.js"></script>
+</head>
+<body>
+    <header class="header-menu-lateral">
+        <input type="checkbox" id="boton-sidebar" class="boton-sidebar">
+        
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2 class="titulo-menu">Hotel el Rincón del Carmen</h2>
+                <label for="boton-sidebar" class="btn-cerrar">✖</label>
+            </div>
+            
+            <ul class="menu-links">
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="catalogo.html">🛏️ Habitaciones</a></li>
+                <li><a href="contacto.html">📍 Contacto</a></li>
+                <li><a href="login.html">🔑 Login</a></li>
+                <li><a href="register.html">👤 Registro</a></li>
+            </ul>
+        </nav>
+        <label for="boton-sidebar" class="overlay"></label>
+    </header>
+    
+
+
+    <header class="navbar">
+        <label for="boton-sidebar" class="menu-logo">☰</label>
+        <h1 class="titulo-index">Hotel el Rincón del Carmen</h1>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Habitaciones</a>
+            <a href="contacto.html">¡Contáctanos!</a>
+        </nav>
+
+        <div class="seccion-usuario">
+            <span id="userInfo">Invitado</span>
+            <button type="button" onclick="logout()"><b>Salir</b></button>
+            <a href="admin.html"><button class="btn-admin">Panel <b>Administrador</b></button></a>
+        </div>
+        <div class="seccion-usuario">
+            <a href="admin.html"><button class="btn-usuario">Panel <b>usuario</b></button></a>
+        </div>
+        <div class="header-spacer"></div>
+    </header>
+    <h1>Panel Usuario</h1>
+    <div id="contenedor-usuario"></div>
+    <footer class="bottom-nav">
+        <a href="index.html">🏠<br>Inicio</a>
+        <a href="reservas.html">🛏️<br>Habitaciones</a>
+        <a href="contacto.html">📍<br>Contacto</a>
+    </footer>
+</body>
+</html>

@@ -206,3 +206,20 @@ if (panelAdmin) {
   }
 
 }
+const panelUsuario =document.getElementById("panelUsuario")
+if (panelUsuario) {
+
+    if (
+      usuarioActivo &&
+      usuarioActivo.rol === "cliente"
+    ) {
+  
+      panelUsuario.style.display = "block";
+  
+    } else {
+  
+      panelUsuario.style.display = "none";
+  
+    }
+  
+  }
